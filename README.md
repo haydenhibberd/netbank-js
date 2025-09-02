@@ -18,14 +18,14 @@ Using this script requires you to input plaintext banking details. If you do not
 
 ## Quick Example
 
-```
-var netbank = require('netbank-js')('12345678', 'password123');
+```javascript
+const netbank = require('netbank-js')('12345678', 'password123');
 
 netbank.login()
 .then(netbank.getAccounts)
-.then(function(accounts){
-	accounts.forEach(function(account){
-		console.log(account.getName() + ' = ' + account.getAvailable();
+.then(accounts => {
+	accounts.forEach(account => {
+		console.log(account.getName() + ' = ' + account.getAvailable());
 	});
 });
 ```

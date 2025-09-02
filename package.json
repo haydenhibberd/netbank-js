@@ -3,6 +3,9 @@
   "version": "0.2.1",
   "description": "NodeJS library for Commonwealth Bank",
   "main": "netbank.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +24,6 @@
   },
   "homepage": "https://github.com/icodethings/netbank-js#readme",
   "dependencies": {
-    "q": "^1.4.1",
-    "request": "^2.65.0"
+    "axios": "^1.6.0"
   }
 }
